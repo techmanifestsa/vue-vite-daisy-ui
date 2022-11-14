@@ -1,0 +1,47 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  transition: width .1s;
+}
+
+@media screen and (max-width: 640px) {
+.wrapper .content{
+	margin-left: 25px;
+}
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    width: 100%;
+  }
+	.wrapper .content{
+	margin-left: 25px;
+}
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 720px;
+  }
+		.wrapper .content{
+	margin-left: 3px;
+}
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 720px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .wrapper {
+    width: 1140px;
+  }
+}
