@@ -5,8 +5,8 @@
 }
 
 @media screen and (max-width: 640px) {
-.wrapper .content{
-	margin-left: 25px;
+	.wrapper .content{
+	margin-left: 24px;
 }
 }
 
@@ -15,7 +15,7 @@
     width: 100%;
   }
 	.wrapper .content{
-	margin-left: 25px;
+	margin-left: 24px;
 }
 }
 
@@ -23,14 +23,18 @@
   .wrapper {
     width: 720px;
   }
-		.wrapper .content{
-	margin-left: 3px;
-}
+  
+  .wrapper .content{
+  margin-left: 15px;
+  }
 }
 
 @media (min-width: 1024px) {
   .wrapper {
     width: 720px;
+  }
+    .wrapper .content{
+  margin-left: 4px;
   }
 }
 

@@ -26,8 +26,9 @@
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal">
               <!-- Navbar menu content here -->
-              <li><a>Box 1</a></li>
-              <li><a>Box 2</a></li>
+              <li v-for="(link, index) in links" :key="index">
+                <a :href="link.url">{{ link.name }}</a>
+              </li>
             </ul>
           </div>
           <div class="dropdown dropdown-end">
@@ -63,15 +64,26 @@
       <label for="my-drawer-3" class="drawer-overlay"></label>
       <ul class="menu p-4 w-80 bg-base-100">
         <!-- Sidebar content here -->
-        <li><a>Box 1</a></li>
-        <li><a>Box 2</a></li>
+        <li v-for="(link, index) in links" :key="index">
+          <a :href="link.url">{{ link.name }}</a>
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      links: [
+        { name: "Link 1", url: "/" },
+        { name: "Link 2", url: "/" },
+        { name: "Link 3", url: "/" },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped></style>
